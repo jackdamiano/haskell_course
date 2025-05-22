@@ -1,0 +1,22 @@
+# Haskell specific
+*.hi
+*.o
+*.p_hi
+*.prof
+*.tix
+*.eventlog
+.cabal-sandbox/
+cabal.sandbox.config
+dist/
+dist-newstyle/
+.stack-work/
+.ghc.environment.*
+
+# IDE specific
+.vscode/
+*.swp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
