@@ -9,4 +9,6 @@
 ## Disclaimers
 - I am not a UPenn student, this is for personal development
 - AI is used to generate the test frameworks. AI was not used to generate any solutions.
-- All solutions are personally coded and evidence of a learning exercise
+- All solutions and sandboxes are personally coded and evidence of a learning exercise
+- Supplementing learning with various texts including LYAH and HPFFP
+- Utilizing Cabal as build environment
