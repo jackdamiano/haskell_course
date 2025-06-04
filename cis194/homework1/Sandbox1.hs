@@ -83,3 +83,27 @@ hello = "Hello"
 world = "World"
 text = hello ++ " " ++ world
 
+ex1 = 1 : []
+ex2 = 3 : (1 : [])
+ex3 = 2 : 3 : 4 : []
+ex4 = [2,3,4] == 2 : 3 : 4 : []
+ex5 = [2,3,4] == ex3
+
+hailstoneSeq :: Integer -> [Integer]
+hailstoneSeq 1 = [1]
+hailstoneSeq n = n : hailstoneSeq (hailstone n)
+
+intListLength :: [Integer] -> Integer
+intListLength [] = 0
+intListLength (x:xs) = 1 + intListLength xs
+
+sumEveryTwo :: [Integer] -> [Integer]
+sumEveryTwo [] = []
+sumEveryTwo (x:[]) = [x]
+sumEveryTwo (x:y:zs) = (x+y) : sumEveryTwo zs
+
+hailstoneLen :: Integer -> Integer
+hailstoneLen n = intListLength (hailstoneSeq n) - 1
+
+boomBang :: [Integer] -> [String]
+boomBang xs = [if x < 10 then "BOOM" else "BANG" | x <- xs, odd x]
