@@ -36,3 +36,10 @@ hanoi :: Integer -> Peg -> Peg -> Peg -> [Move]
 hanoi 1 a b c = [(a,b)]
 hanoi n a b c = hanoi (n-1) a c b ++ [(a,b)] ++ hanoi (n-1) c b a
 
+moveListLength :: [Move] -> Integer
+moveListLength [] = 0
+moveListLength (x:xs) = 1 + moveListLength xs
+
+hanoiLength :: Integer -> Integer
+hanoiLength 0 = 0
+hanoiLength n = moveListLength (hanoi n "a" "a" "a")
