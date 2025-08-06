@@ -42,7 +42,7 @@ histogram xs = unlines (map (drawLine occ) [max+1,max..1]) ++ "==========\n01234
 
 -- returns a line with the correct plotted *'s
 -- takes in a list where each index corresponds to [0..9] and each value is the quantity of each. if value at x matches, then put a * for that row
-drawLine :: [Int] -> Int -> String
+drawLine :: [Int] -> (Int -> String)
 drawLine xs max = [if x >= max then '*' else ' ' | x <- xs]
 
 
