@@ -13,7 +13,11 @@ library
                   , Golf
                   , Sandbox4
                   , Homework4
+                  , Calc
   other-modules:    Log
+                  , ExprT
+                  , Parser
+                  , StackVM
   build-depends:    base >=4.14 && <4.19
                   , Cabal >= 2.10.2.0
                   , safe
@@ -21,6 +25,7 @@ library
                   , homework2
                   , homework3
                   , homework4
+                  , homework5
   default-language: Haskell2010
 
 test-suite homework1-test
