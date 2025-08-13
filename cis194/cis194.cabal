@@ -15,19 +15,26 @@ library
                   , Homework4
                   , Calc
                   , Fibonacci
+                  , Sandbox7
+                  , Scrabble
+                  , Sized
   other-modules:    Log
                   , ExprT
                   , Parser
                   , StackVM
+                  , Buffer
+                  , Editor
   build-depends:    base >=4.14 && <4.19
                   , Cabal >= 2.10.2.0
                   , safe
+                  , mtl
   hs-source-dirs:   homework1
                   , homework2
                   , homework3
                   , homework4
                   , homework5
                   , homework6
+                  , homework7
   default-language: Haskell2010
 
 test-suite homework1-test
@@ -40,3 +47,22 @@ test-suite homework1-test
   hs-source-dirs:   homework1
   default-language: Haskell2010
   ghc-options:      -main-is Homework1Test
+
+executable string-editor
+  main-is:          StringBufEditor.hs
+  other-modules:    Buffer
+                  , Editor
+                  , StringBuffer
+  build-depends:    base >=4.14 && <4.19, cis194, mtl
+  hs-source-dirs:   homework7
+  default-language: Haskell2010
+
+executable joinlist-editor
+  main-is:          JoinList.hs
+  other-modules:    Buffer
+                  , Editor
+                  , Scrabble
+                  , Sized
+  build-depends:    base >=4.14 && <4.19, cis194, mtl
+  hs-source-dirs:   homework7
+  default-language: Haskell2010
