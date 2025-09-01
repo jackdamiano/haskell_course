@@ -1,5 +1,6 @@
 module Sandbox9 where
 import Data.Maybe (fromMaybe)
+import Control.Applicative
 
 data Funny f a = Funny a (f a)
 

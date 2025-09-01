@@ -21,6 +21,8 @@ library
                   , Sandbox8
                   , Party
                   , Sandbox9
+                  , Sandbox10
+                  , AParser
   other-modules:    Log
                   , ExprT
                   , Parser
@@ -42,6 +44,7 @@ library
                   , homework7
                   , homework8
                   , homework9
+                  , homework10
   default-language: Haskell2010
 
 test-suite homework1-test
