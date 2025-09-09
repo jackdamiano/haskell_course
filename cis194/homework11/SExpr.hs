@@ -61,7 +61,6 @@ data SExpr = A Atom
 atoms :: Parser Atom
 atoms = (N <$> posInt) <|> (I <$> ident)
 
-
 -- get rid of spaces at front, check if Atom or parenthesis/comb. if Atom, process using parse,
 -- if (x), discard the inner and outer parentheses and recursively process the expression using zeroOrMore.
 -- Once complete, get rid of white space at end as well

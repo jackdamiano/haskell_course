@@ -25,6 +25,8 @@ library
                   , AParser
                   , SExpr
                   , Sandbox11
+                  , Sandbox12
+                  , Risk
   other-modules:    Log
                   , ExprT
                   , Parser
@@ -37,6 +39,7 @@ library
                   , safe
                   , mtl
                   , containers
+                  , MonadRandom
   hs-source-dirs:   homework1
                   , homework2
                   , homework3
@@ -48,6 +51,7 @@ library
                   , homework9
                   , homework10
                   , homework11
+                  , homework12
   default-language: Haskell2010
 
 test-suite homework1-test
