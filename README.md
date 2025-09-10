@@ -3,7 +3,7 @@
 ## Learning Objectives
 - Learn the basics of functional programming ✅
 - Track Haskell progress ✅
-- Complete all 12 lectures and homework assignments ✅
+- Complete all 12 lectures and homework assignments ✅ (see cis194 folder)
 - Learn Cabal and how to structure configuration ✅
 - Read ~~all required~~ *relevant* text from course ✅
 - Select and complete final project ✅ (HW 12 Monad Risk.hs)
