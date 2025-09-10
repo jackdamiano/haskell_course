@@ -8,6 +8,8 @@
 - Read ~~all required~~ *relevant* text from course ✅
 - Select and complete final project ✅ (HW 12 Monad Risk.hs)
 
+✅ = complete
+
 ## Disclaimers
 - I am not a UPenn student, this is for personal development
 - AI was used to generate the test framework for Homework 1. AI was not used to generate any solutions.
